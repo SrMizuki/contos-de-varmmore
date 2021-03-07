@@ -10,6 +10,7 @@ a {cursor: pointer !important; color: rgba(40, 40, 40, 1.00);}
 em {font-family: 'Unna', serif;}
 div, section, ul, li, p {position: relative; float: left;}
 
+h1, h2, h3, h4 {margin: 0;}
 h1 {font-size: 3rem; font-weight: 700; margin: 0;}
 
 section {width: 100%;}
@@ -22,11 +23,16 @@ section {width: 100%;}
 .hs-40 {width: 100%; height: 40px;}
 .hs-100 {width: 100%; height: 100px;}
 .hs-l {width: 100%; height: 1px; margin: 40px 0; background-color: rgba(0, 0, 0, 0.10);}
+.hs-l.small {margin: 20px 0;}
 
 /* CONTAINERS */
-.gmc {width: 100%; min-height: 100%; background-color: rgba(255, 255, 255, 1.00); padding: 100px 0 40px 0; transition: all 0.3s;}	
+.gmc {width: 100%; min-height: 100%; background-color: rgba(255, 255, 255, 1.00); padding: 100px 0 40px 0; transition: all 0.3s;}
 input[type=checkbox]:checked ~ .gmc {background-color: #fffbfb; padding: 40px 0;}
 input[type=checkbox]:checked ~ .gmc * {color: #001122;}
+
+.m-bg {background-image: url(../img/m-bg.jpg); background-position: 50% 0%; background-repeat: no-repeat;}
+
+.flex-c {width: 100%; display: flex; align-items: center; justify-content: center;}
 
 .mc {width: 100%; max-width: 800px; padding: 0 10px 0 10px; left: 50%; transform: translateX(-50%);}
 
@@ -66,6 +72,8 @@ input[type=checkbox]:checked ~ .gmc * {color: #001122;}
 
 .hi {display: none;}
 
+.txt-b {font-size: 1.4rem;}
+
 input[type=checkbox]:checked ~ .gmc .m-h-c {transform: translate(-50%, -100px); opacity: 0.00;}
 
 .m-h-c {width: 100%; max-width: 1000px; height: 70px; background-color: rgba(255, 255, 255, 1.00); padding: 0 0 0 20px; position: fixed; left: 50%; transform: translateX(-50%); top: 0px; box-shadow: 1000px 0 0 0 rgba(255, 255, 255, 1.00), -1000px 0 0 0 rgba(255, 255, 255, 1.00), 0 0 50px 0 rgba(40, 40, 40, 0.20); z-index: 100; transition: all 0.3s;}
@@ -97,6 +105,8 @@ input[type=checkbox]:checked ~ .gmc .m-h-c {transform: translate(-50%, -100px); 
 
 .txt-hl {color: rgba(80, 80, 160, 1.00) !important;}
 
+
+.m-txt-c {width: calc(100% - 40px); max-width: 480px; background-color: rgba(255, 255, 255, 0.50); padding: 60px; border-radius: 20px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 1.00);}
 
 /* VIDEO CONTAINER */
 
