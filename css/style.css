@@ -10,6 +10,8 @@ a {cursor: pointer !important; color: rgba(40, 40, 40, 1.00);}
 em {font-family: 'Unna', serif;}
 div, section, ul, li, p {position: relative; float: left;}
 
+h1 {font-size: 3rem; font-weight: 700; margin: 0;}
+
 section {width: 100%;}
 
 /* HORIZONTAL SEPERATORS */
@@ -46,6 +48,10 @@ input[type=checkbox]:checked ~ .gmc * {color: #001122;}
 .c-75, 
 .c-100, 
 .c-100-f {display: block; position: relative; float: left;}
+
+.opct-75 {opacity: 0.75}
+.opct-50 {opacity: 0.50}
+.opct-25 {opacity: 0.25}
 
 /*ALIGNMENTS*/
 
@@ -99,14 +105,15 @@ input[type=checkbox]:checked ~ .gmc .m-h-c {transform: translate(-50%, -100px); 
 
 /* CHAPTERS SELECTOR */
 
-.chapter-c .title {width: 100%; background-color: rgba(255, 255, 255, 1.00); margin: 0 0 0 10px; font-size: 2rem; text-transform: uppercase; font-weight: 700; font-family: 'Unna', serif; z-index: 1;}
-.chapter-c .chapter-s {padding: 10px; background-color: rgba(250, 250, 250, 1.00); margin: 10px 10px 0 10px; transition: all 0.3s;}
-.chapter-c .chapter-s:hover {background-color: rgba(180, 180, 180, 1.00); color: rgba(255, 255, 255, 1.00); transform: scale(1.1);}
+.chapter-c .title {margin: 0; padding: 20px; font-size: 2rem; text-transform: uppercase; font-weight: 700; font-family: 'Unna', serif; z-index: 1;}
+.chapter-c .title em {text-transform: initial; font-size: 1.4rem;}
+.chapter-c .chapter-s {display: block; padding: 20px; background-color: rgba(255, 255, 255, 1.00); border-radius: 10px; transition: all 0.3s; opacity: 0.80;}
+.chapter-c .chapter-s:hover {background-color: rgba(0, 0, 0, 0.05); opacity: 1.00;}
 
-.chapter-c .chapter-s .part {display: block; position: relative; width: 100%;}
+.chapter-c .chapter-s .part {display: block; position: relative; width: 100%; font-weight: 700;}
 .chapter-c .chapter-s .quote {display: block; position: relative; width: 100%; font-family: 'Unna', serif; font-size: 1.2rem;}
-.chapter-c .chapter-s .quote:before {content: '”'; font-size: 8rem; position: absolute; top: -60px; right: 0px; opacity: 0.10;}
-.chapter-c .chapter-s:hover .quote:before {opacity: 0.40;}
+.chapter-c .chapter-s .quote span {font-size: 8rem; position: absolute; top: -60px; right: 0px; opacity: 0.10; font-family: 'Unna', serif; transition: all 0.3s;}
+.chapter-c .chapter-s:hover .quote span {opacity: 0.30;}
 
 .disabled {opacity: 0.25 !important; pointer-events: none; cursor: wait;}
 
@@ -136,7 +143,7 @@ input[type=checkbox]:checked ~ .gmc .read-mode .tooltip,
 input[type=checkbox]:checked ~ .gmc .read-mode .tooltip * {color: rgba(255, 255, 255, 1.00);}
 
 .m-chapter {width: calc(100% - 60px); max-width: 500px; left: 50%; transform: translateX(-50%);}
-
+.m-chapter p {font-size: 1.6rem;}
 .m-chapter .anchor {transform: translateY(-100px);}
 .m-chapter h2 {padding: 0 0 0 40px; font-size: 4rem; font-family: 'Unna', serif; text-transform: uppercase; opacity: 0.75;}
 .m-chapter .part {width: 100px; max-height: 0px; transform: translate(-120px, 10px); font-size: 0.8rem; text-align: right; opacity: 0.50;}
@@ -160,10 +167,10 @@ input[type=checkbox]:checked ~ .gmc .m-chapter .part {display: none;}
 .m-h-c input[type="checkbox"]:checked ~ label > .m-btn:before, input[type="checkbox"]:checked ~ label > .m-btn:after {left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%) rotate(45deg);}
 .m-h-c input[type="checkbox"]:checked ~ label > .m-btn:after {bottom: initial; transform: translateX(-50%) translateY(-50%) rotate(-45deg);}
 
-.m-h-c .nav-c {width: 100%; min-height: 0; max-height: 0; background-color: rgba(255, 255, 255, 0.90); backdrop-filter: blur(5px); position: fixed; top: 70px; left: 0px; overflow: hidden; opacity: 0.00; transition: opacity 0.6s;}
+.m-h-c .nav-c {width: 100%; min-height: 0; max-height: 0; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); position: fixed; top: 70px; left: 0px; overflow: hidden; opacity: 0.00; transition: opacity 0.6s;}
 .m-h-c input[type="checkbox"]:checked ~ .nav-c {min-height: calc(100vh - 70px); max-height: calc(100vh - 70px); opacity: 1.00;}
 .m-h-c .nav-c .nav-l, 
-.m-h-c .nav-c .nav-l.arrow {width: 100%; display: block; text-align: center; padding: 0; position: relative; float: left;}
+.m-h-c .nav-c .nav-l.arrow {width: 100%; display: block; text-align: center; padding: 0; font-size: 1.2rem; position: relative; float: left;}
 .m-h-c .nav-c .nav-l.arrow .nav-dp {width: 100%; position: relative; float: left; top: initial; z-index: 1;}
 
 .m-chapter .part {width: 100px; max-height: 0px; transform: translate(-100px, 10px);}
