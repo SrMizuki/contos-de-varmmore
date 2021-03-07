@@ -29,6 +29,7 @@ section {width: 100%;}
 .gmc {width: 100%; min-height: 100%; background-color: rgba(255, 255, 255, 1.00); padding: 100px 0 40px 0; transition: all 0.3s;}
 input[type=checkbox]:checked ~ .gmc {background-color: #fffbfb; padding: 40px 0;}
 input[type=checkbox]:checked ~ .gmc * {color: #001122;}
+input[type=checkbox]:checked ~ .gmc p {font-size: 1.2rem;}
 
 .m-bg {background-image: url(../img/m-bg.jpg); background-position: 50% 0%; background-repeat: no-repeat;}
 
@@ -122,8 +123,8 @@ input[type=checkbox]:checked ~ .gmc .m-h-c {transform: translate(-50%, -100px); 
 
 .chapter-c .chapter-s .part {display: block; position: relative; width: 100%; font-weight: 700;}
 .chapter-c .chapter-s .quote {display: block; position: relative; width: 100%; font-family: 'Unna', serif; font-size: 1.2rem;}
-.chapter-c .chapter-s .quote span {font-size: 8rem; position: absolute; top: -60px; right: 0px; opacity: 0.10; font-family: 'Unna', serif; transition: all 0.3s;}
-.chapter-c .chapter-s:hover .quote span {opacity: 0.30;}
+.chapter-c .chapter-s .quote span {font-size: 8rem; position: absolute; top: -60px; right: 0px; opacity: 0.10; font-family: 'Unna', serif; transform: scale(0.8); transition: all 0.3s;}
+.chapter-c .chapter-s:hover .quote span {opacity: 0.30; transform: scale(1.0);}
 
 .disabled {opacity: 0.25 !important; pointer-events: none; cursor: wait;}
 
@@ -153,7 +154,6 @@ input[type=checkbox]:checked ~ .gmc .read-mode .tooltip,
 input[type=checkbox]:checked ~ .gmc .read-mode .tooltip * {color: rgba(255, 255, 255, 1.00);}
 
 .m-chapter {width: calc(100% - 60px); max-width: 500px; left: 50%; transform: translateX(-50%);}
-.m-chapter p {font-size: 1.6rem;}
 .m-chapter .anchor {transform: translateY(-100px);}
 .m-chapter h2 {padding: 0 0 0 40px; font-size: 4rem; font-family: 'Unna', serif; text-transform: uppercase; opacity: 0.75;}
 .m-chapter .part {width: 100px; max-height: 0px; transform: translate(-120px, 10px); font-size: 0.8rem; text-align: right; opacity: 0.50;}
@@ -182,6 +182,11 @@ input[type=checkbox]:checked ~ .gmc .m-chapter .part {display: none;}
 .m-h-c .nav-c .nav-l, 
 .m-h-c .nav-c .nav-l.arrow {width: 100%; display: block; text-align: center; padding: 0; font-size: 1.2rem; position: relative; float: left;}
 .m-h-c .nav-c .nav-l.arrow .nav-dp {width: 100%; position: relative; float: left; top: initial; z-index: 1;}
+
+.m-txt-c {padding: 20px;}
+
+.chapter-c .chapter-s {margin: 0 0 20px 0; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 1px 5px 0 rgba(0, 0, 0, 0.20);}
+.chapter-c .chapter-s:hover {background-color: rgba(0, 0, 0, 0.05); opacity: 1.00;}
 
 .m-chapter .part {width: 100px; max-height: 0px; transform: translate(-100px, 10px);}
 
