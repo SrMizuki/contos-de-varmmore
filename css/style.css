@@ -26,7 +26,7 @@ section {width: 100%;}
 .hs-l.small {margin: 20px 0;}
 
 /* CONTAINERS */
-.gmc {width: 100%; min-height: 100%; background-color: rgba(255, 255, 255, 1.00); padding: 100px 0 40px 0; transition: all 0.3s;}
+.gmc {width: 100%; min-height: 100%; background-color: rgba(255, 255, 255, 0.00); padding: 100px 0 40px 0; transition: all 0.3s;}
 input[type=checkbox]:checked ~ .gmc {background-color: #fffbfb; padding: 40px 0;}
 input[type=checkbox]:checked ~ .gmc * {color: #001122;}
 input[type=checkbox]:checked ~ .gmc p {font-size: 1.2rem;}
