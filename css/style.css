@@ -30,6 +30,7 @@ section {width: 100%;}
 input[type=checkbox]:checked ~ .gmc {background-color: #fffbfb; padding: 40px 0;}
 input[type=checkbox]:checked ~ .gmc * {color: #001122;}
 input[type=checkbox]:checked ~ .gmc p {font-size: 1.2rem;}
+input[type=checkbox]:checked ~ .gmc .m-chapter {width: calc(100% - 10px); font-size: 1.2rem;}
 
 .m-bg {background-image: url(../img/m-bg.jpg); background-position: 50% 50%; background-repeat: no-repeat;}
 
