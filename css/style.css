@@ -31,9 +31,9 @@ input[type=checkbox]:checked ~ .gmc {background-color: #fffbfb; padding: 40px 0;
 input[type=checkbox]:checked ~ .gmc * {color: #001122;}
 input[type=checkbox]:checked ~ .gmc p {font-size: 1.2rem;}
 
-.m-bg {background-image: url(../img/m-bg.jpg); background-position: 50% 0%; background-repeat: no-repeat;}
+.m-bg {background-image: url(../img/m-bg.jpg); background-position: 50% 50%; background-repeat: no-repeat;}
 
-.flex-c {width: 100%; display: flex; align-items: center; justify-content: center;}
+.flex-c {width: 100%; min-height: calc(100vh - 130px) !important; display: flex; align-items: center; justify-content: center;}
 
 .mc {width: 100%; max-width: 800px; padding: 0 10px 0 10px; left: 50%; transform: translateX(-50%);}
 
@@ -60,6 +60,17 @@ input[type=checkbox]:checked ~ .gmc p {font-size: 1.2rem;}
 .opct-50 {opacity: 0.50}
 .opct-25 {opacity: 0.25}
 
+/* BUTTONS */
+
+.btn {background-color: rgba(40, 40, 40, 1.00); padding: 15px 25px; border-radius: 5px; font-size: 1.2rem; color: rgba(255, 255, 255, 1.00); display: inline-block; transition: all 0.3s;}
+.btn:hover {opacity: 0.75; color: rgba(255, 255, 255, 1.00); background-color: rgba(40, 40, 40, 1.00);}
+
+.cta01 {padding: 20px 30px; font-size: 1.4rem;}
+
+
+.cta02 {background-color: rgba(255, 255, 255, 0.90); padding: 20px 30px; font-size: 1.4rem; color: rgba(40, 40, 40, 1.00); box-shadow: inset 0 0 0 2px rgba(40, 40, 40, 1.00);}
+
+
 /*ALIGNMENTS*/
 
 .a-l {text-align: left;}
@@ -73,20 +84,25 @@ input[type=checkbox]:checked ~ .gmc p {font-size: 1.2rem;}
 
 .hi {display: none;}
 
+.hidde-desk {display: none !important;}
+.hidde-mob {display: initial !important;}
+
 .txt-b {font-size: 1.4rem;}
 
 input[type=checkbox]:checked ~ .gmc .m-h-c {transform: translate(-50%, -100px); opacity: 0.00;}
 
 .m-h-c {width: 100%; max-width: 1000px; height: 70px; background-color: rgba(255, 255, 255, 1.00); padding: 0 0 0 20px; position: fixed; left: 50%; transform: translateX(-50%); top: 0px; box-shadow: 1000px 0 0 0 rgba(255, 255, 255, 1.00), -1000px 0 0 0 rgba(255, 255, 255, 1.00), 0 0 50px 0 rgba(40, 40, 40, 0.20); z-index: 100; transition: all 0.3s;}
-.m-h-c .logo {display: block; position: relative; float: left; top: 50%; transform: translateY(-50%) scale(1.2); font-family: 'Unna', serif; font-weight: 400; line-height: 0.5rem; transition: all 0.3s; cursor: pointer;}
-.m-h-c .logo:hover {opacity: 0.50;}
-.m-h-c .logo span {font-family: 'Unna', serif;}
-.m-h-c .logo .top {font-size: 1.1rem; position: absolute; right: 5px; opacity: 0.75;}
-.m-h-c .logo .bottom {font-size: 1.4rem;}
-.m-h-c .logo .bottom span {font-size: 2.6rem;}
+.logo {display: block; position: relative; float: left; top: 50%; transform: translateY(-50%) scale(1.2); font-family: 'Unna', serif; font-weight: 400; line-height: 0.5rem; transition: all 0.3s; cursor: pointer;}
+.logo:hover {opacity: 0.50;}
+.logo span {font-family: 'Unna', serif;}
+.logo .top {font-size: 1.1rem; position: absolute; right: 5px; opacity: 0.75;}
+.logo .bottom {font-size: 1.4rem;}
+.logo .bottom span {font-size: 2.6rem;}
+
+.logo.big {display: block; position: relative; float: left; left: 50%; transform: translateX(-50%) scale(2.5);}
 
 .m-h-c .nav-c {float: right;}
-.m-h-c .nav-c .nav-l {display: block; height: 70px; padding: 0 25px 0 25px; line-height: 70px; cursor: pointer; transition: all 0.3s;}
+.m-h-c .nav-c .nav-l {display: block; position: relative; float: left; height: 70px; padding: 0 25px 0 25px; line-height: 70px; cursor: pointer; transition: all 0.3s;}
 .m-h-c .nav-c .nav-l.arrow {padding: 0 50px 0 25px;}
 .m-h-c .nav-c .nav-l.arrow:before {content: ''; width: 8px; height: 8px; position: absolute; right: 28px; top: calc(50% - 5px); transform: translateY(-50%) rotate(45deg); box-shadow: 2px 2px 0 0 rgba(40, 40, 40, 0.50); transition: all 0.3s;}
 .m-h-c .nav-c .nav-l.arrow:hover:before {box-shadow: 2px 2px 0 0 rgba(40, 40, 40, 1.00);}
@@ -107,7 +123,7 @@ input[type=checkbox]:checked ~ .gmc .m-h-c {transform: translate(-50%, -100px); 
 .txt-hl {color: rgba(80, 80, 160, 1.00) !important;}
 
 
-.m-txt-c {width: calc(100% - 40px); max-width: 480px; background-color: rgba(255, 255, 255, 0.50); padding: 60px; border-radius: 20px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 1.00);}
+.m-txt-c {width: calc(100% - 40px); max-width: 620px; background-color: rgba(255, 255, 255, 0.50); padding: 60px; border-radius: 20px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 1.00);}
 
 /* VIDEO CONTAINER */
 
@@ -161,6 +177,11 @@ input[type=checkbox]:checked ~ .gmc .m-chapter .part {display: none;}
 
 @media only screen and (max-width: 540px) {
 
+.hidde-desk {display: initial !important;}
+.hidde-mob {display: none !important;}
+
+.cta01,
+.cta02 {min-width: 240px;}
 
 .m-h-c .logo {position: absolute; left: 50%; transform: translate(-50%, -50%);}
 
