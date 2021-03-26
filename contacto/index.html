@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, height=device-height"/>
+
+  	<title>Contos de Varmmore</title>
+
+  	<link href="../css/style.css" rel="stylesheet">
+
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unna:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+<body onclick>
+
+<section>
+<input id="BTC" type="checkbox" class="hi">
+<div class="modal-c">
+	<label for="BTC" class="btn-close"></label>
+	<img src="../img/btc.jpg">
+	<br /><br />
+	<h2>Bitcoin BTC</h2>
+	<br /><br />
+	<img class="wallet-qr" src="../img/qr-btc.jpg">
+	<br /><br />
+	<span class="wallet-a-c">
+		bc1q8gcaa7xnzpzuethq8ge5ggtue004e7laverm0k
+	</span>
+	<br /><br />
+	<input class="hi" type="text" value="bc1q8gcaa7xnzpzuethq8ge5ggtue004e7laverm0k" id="InputBTC">
+	<button class="c-100-f" onclick="CopyBTC()">Copiar endereço</button>
+
+	<script type="text/javascript">
+		function CopyBTC() {
+		  var copyText = document.getElementById("InputBTC");
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999);
+		  document.execCommand("copy");
+		  alert("O endereço " + copyText.value + " foi copiado para o 'Clipboard'");
+		}
+	</script>
+</div>
+<label for="BTC" class="wm"></label>
+</section>
+
+<section>
+<input id="ETH" type="checkbox" class="hi">
+<div class="modal-c">
+	<label for="ETH" class="btn-close"></label>
+	<img src="../img/eth.jpg">
+	<br /><br />
+	<h2>Ethereum ETH</h2>
+	<br /><br />
+	<img class="wallet-qr" src="../img/qr-eth.jpg">
+	<br /><br />
+	<span class="wallet-a-c">
+		0x722D68f600999B6f55f6D417380d303c585366F0
+	</span>
+	<br /><br />
+	<input class="hi" type="text" value="0x722D68f600999B6f55f6D417380d303c585366F0" id="InputETH">
+	<button class="c-100-f" onclick="CopyETH()">Copiar endereço</button>
+
+	<script type="text/javascript">
+		function CopyETH() {
+		  var copyText = document.getElementById("InputETH");
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999);
+		  document.execCommand("copy");
+		  alert("O endereço " + copyText.value + " foi copiado para o 'Clipboard'");
+		}
+	</script>
+</div>
+<label for="ETH" class="wm"></label>
+</section>
+
+<section>
+<input id="ADA" type="checkbox" class="hi">
+<div class="modal-c">
+	<label for="ADA" class="btn-close"></label>
+	<img src="../img/ada.jpg">
+	<br /><br />
+	<h2>Cardano ADA</h2>
+	<br /><br />
+	<img class="wallet-qr" src="../img/qr-ada.jpg">
+	<br /><br />
+	<span class="wallet-a-c">
+		DdzFFzCqrhsrmHApDieM7Lkv1vYysa1M7LAXXnzFde4hkfLihExzriobZSBPG38QXcaJ79Y9u7KSfTWQtdeYdJYYmM9UXgcPMLRVpCUk
+	</span>
+	<br /><br />
+	<input class="hi" type="text" value="DdzFFzCqrhsrmHApDieM7Lkv1vYysa1M7LAXXnzFde4hkfLihExzriobZSBPG38QXcaJ79Y9u7KSfTWQtdeYdJYYmM9UXgcPMLRVpCUk" id="InputADA">
+	<button class="c-100-f" onclick="CopyADA()">Copiar endereço</button>
+
+	<script type="text/javascript">
+		function CopyADA() {
+		  var copyText = document.getElementById("InputADA");
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999);
+		  document.execCommand("copy");
+		  alert("O endereço " + copyText.value + " foi copiado para o 'Clipboard'");
+		}
+	</script>
+</div>
+<label for="ADA" class="wm"></label>
+</section>
+
+<section>
+<input id="CEL" type="checkbox" class="hi">
+<div class="modal-c">
+	<label for="CEL" class="btn-close"></label>
+	<img src="../img/cel.jpg">
+	<br /><br />
+	<h2>Celsius CEL</h2>
+	<br /><br />
+	<img class="wallet-qr" src="../img/qr-cel.jpg">
+	<br /><br />
+	<span class="wallet-a-c">
+		0x722D68f600999B6f55f6D417380d303c585366F0
+	</span>
+	<br /><br />
+	<input class="hi" type="text" value="0x722D68f600999B6f55f6D417380d303c585366F0" id="InputCEL">
+	<button class="c-100-f" onclick="CopyADA()">Copiar endereço</button>
+
+	<script type="text/javascript">
+		function CopyCEL() {
+		  var copyText = document.getElementById("InputCEL");
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999);
+		  document.execCommand("copy");
+		  alert("O endereço " + copyText.value + " foi copiado para o 'Clipboard'");
+		}
+	</script>
+</div>
+<label for="CEL" class="wm"></label>
+</section>
+
+<div class="m-h-c">
+	<a href="../" class="logo">
+		<span class="top">Contos de</span><br />
+		<span class="bottom"><span>V</span>armmore</span>
+	</a>
+	<input id="MainMenu" type="checkbox" class="hi">
+	<label for="MainMenu"><span class="m-btn"></span></label>
+	<div class="nav-c">
+		<div class="nav-l arrow">Contos
+			<div class="nav-dp">
+				<a href="../a-luz-de-varmmore/">A Luz de Varmmore</a>
+				<a href="../a-chegada-de-petrus/" class="disabled">A chegada de Petrus <em>Brevemente</em></a>
+			</div>
+		</div>
+		<div class="nav-l arrow">Adendas
+			<div class="nav-dp">
+				<a href="../a-cidade-de-varmmore/" class="disabled">A Cidade de Varmmore <em>Brevemente</em></a>
+				<a href="../as-treze/" class="disabled">As Treze <em>Brevemente</em></a>
+			</div>
+		</div>
+		<a href="../saber-mais/" class="nav-l">Saber mais</a>
+		<a href="../contacto/" class="nav-l">Contacto</a>
+	</div>
+</div>
+<div class="hs-100 hidde-mob"></div>
+<div class="hs-60 hidde-desk"></div>
+<div class="mc">
+	<div class="hs-40"></div>
+	<h1 class="a-c opct-75">Contacto</h1>
+	<div class="hs-l hidde-mob"></div>
+	<div class="hs-l small hidde-desk"></div>
+	<div class="c-50">
+		<form action="https://formspree.io/f/xdopqzlb" method="POST">
+		  <label>
+			<span>O teu email</span>
+		    <input type="email" name="_replyto">
+		  </label>
+		  <label>
+			<span>O teu nome</span>
+		    <input type="text" name="nome">
+		  </label>
+		  <label>
+			<span>Escreve aqui a tua mensagem</span>
+		    <textarea name="mensagem"></textarea>
+		  </label>
+
+		  <!-- your other form fields go here -->
+		  <div class="hs-20"></div>
+
+		  <div class="c-100-f a-c"><button type="submit">Enviar mensagem</button></div>
+		</form>
+	</div>
+	<div class="hs-l hidde-desk"></div>
+	<div class="c-50 right">
+		<div class="hs-60 hidde-mob"></div>
+		<h2 class="a-c">Gostavas de contribuir?</h2>
+		<div class="hs-20"></div>
+		<p>
+			Se gostaste do que leste e gostavas de me ajudar a comprar tempo para continuar a desenvolver o universo de Varmmore podes sempre 
+			 <a href="https://www.buymeacoffee.com/telmomoreira" target="_blank" class="g-link">pagar-me um café</a>, ou através das cryptomoedas disponíveis.
+		</p>
+		<div class="hs-l hidde-mob"></div>
+		<div class="hs-40 hidde-desk"></div>
+		<a href="https://www.buymeacoffee.com/telmomoreira" class="btn c-100-f a-c" target="_blank">Compras-me um café?</a>
+		<div class="hs-20"></div>
+		<div class="c-100-f a-c">
+			<label class="wallet-c" for="BTC"><img width="32" height="32" src="../img/btc.jpg"></label>
+			<label class="wallet-c" for="ETH"><img width="32" height="32" src="../img/eth.jpg"></label>
+			<label class="wallet-c" for="ADA"><img width="32" height="32" src="../img/ada.jpg"></label>
+			<label class="wallet-c" for="CEL"><img width="32" height="32" src="../img/cel.jpg"></label>
+		</div>
+	</div>
+	<div class="hs-l"></div>
+	
+</div>
+
+
+</body>
+</html>
